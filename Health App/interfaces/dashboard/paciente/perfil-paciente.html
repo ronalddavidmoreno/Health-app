@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="../../../css/main.css">
+    <script src="https://kit.fontawesome.com/35395e1fb2.js" crossorigin="anonymous"></script>
+    <script type='text/javascript' src="../../../js/panel/escritura.js"></script>
+    <title>Perfil Paciente</title>
+</head>
+
+<body>
+    <div class="content">
+        <!-- contenido -->
+        <section id="contenido-perfil-paciente">
+            <div class="wrapper">
+                <div>
+                    <div>
+                        <h1>Mi Perfil</h1>
+                    </div>
+                    <div class="caja-box">
+                        <span class="caja-box_titulo">Mis datos personales</span>
+                        <form class="form-paciente" action="">
+                            <p>
+                                <label for="nombpell">Nombre y Apellidos:</label>
+                                <input type="text" id="nomApell" name="nombre-apellidos">
+                            </p>
+                            <p>
+                                <label for="fecha-registro">Fecha de registro:</label>
+                                <input type="date" name="fecha-registro" id="fecha-registro">
+                            </p>
+                            <p>
+                                <label for="genero">Genero:</label>
+                                <select name="genero" id="genero">
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="edad">Edad:</label>
+                                <input type="number" id="edad" name="edad">
+                            </p>
+                            <p>
+                                <label for="lugarNac">Lugar de Nacimiento: </label>
+                                <select name="lugarNac" id="lugarNac">
+                                    <option value="">Seleccione</option>
+                                    <option value="Amazonas">Amazonas</option>
+                                    <option value="Ancash">Ancash</option>
+                                    <option value="Apurímac">Apurímac</option>
+                                    <option value="Arequipa">Arequipa</option>
+                                    <option value="Ayacucho">Ayacucho</option>
+                                    <option value="Cajamarca">Cajamarca</option>
+                                    <option value="Callao">Callao</option>
+                                    <option value="Cuzco">Cuzco </option>
+                                    <option value="Huancavelica">Huancavelica</option>
+                                    <option value="Huánuco">Huánuco</option>
+                                    <option value="Ica">Ica</option>
+                                    <option value="Junín">Junín</option>
+                                    <option value="La_Libertad">La Libertad</option>
+                                    <option value="Lambayeque">Lambayeque</option>
+                                    <option value="Lima">Lima</option>
+                                    <option value="Loreto">Loreto</option>
+                                    <option value="Madre_de_Dios">Madre de Dios</option>
+                                    <option value="Moquegua">Moquegua</option>
+                                    <option value="Pasco">Pasco</option>
+                                    <option value="Piura">Piura</option>
+                                    <option value="Puno">Puno</option>
+                                    <option value="San_Martín">San Martín</option>
+                                    <option value="Tacna">Tacna</option>
+                                    <option value="Tumbes">Tumbes</option>
+                                    <option value="Ucayali">Ucayali</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="telefono">Telefono:</label>
+                                <input type="tel" id="telefono" name="telefono">
+                            </p>
+                            <p>
+                                <label for="dni">Documento N°:</label>
+                                <input type="number" maxlength="8" id="dni" name="dni">
+                            </p>
+                            <p>
+                                <label for="estado-civil">Estado civil:</label>
+                                <select name="estado-civil" id="estado-civil">
+                                    <option value="Soltero">Soltero</option>
+                                    <option value="Casado">Casado</option>
+                                    <option value="Divorciado">Divorciado</option>
+                                    <option value="Viudo">Viudo</option>
+                                </select>
+                            </p>
+                            <p>
+                                <input type="submit" id="editar" value="Actualizar datos">
+                            </p>
+                            <p>
+                                <input type="submit" id="guardar" value="Guardar">
+                            </p>
+                        </form>
+                    </div>
+                    <div id='datos-clinicos'>
+                        <span class="caja-box_titulo">Dastos Clinicos</span>
+                        <div class="tabs">
+                            <div class="tab-header">
+                                <div class="active">
+                                    <!-- <i class="fa fa-code"></i> -->Resumen de Historia
+                                </div>
+                                <div>
+                                    <!-- <i class="fa fa-pencil-square"></i> --> Tratamiento
+                                </div>
+                                <div>
+                                    <!-- <i class="fa fa-bar-chart"></i> -->Resultados
+                                </div>
+                                <div>
+                                    <!-- <i class="fa fa-envelope"></i> --> Observación
+                                </div>
+                            </div>
+                            <div class="tab-indicator"></div>
+                            <div class="tab-content">
+
+                                <div class="active">
+                                    <!-- <i class="fa fa-code"></i> -->
+                                    <h2>Mi Historia</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique
+                                        quisquam
+                                        officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum
+                                        laborum atque vero ea perferendis consectetur veritatis.</p>
+                                    <button type="submit" class="descargar"><i
+                                            class="fas fa-download"></i></i>Información completa</button>
+                                </div>
+
+                                <div>
+                                    <!-- <i class="fa fa-pencil-square"></i> -->
+                                    <h2>Mis tratamientos</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique
+                                        quisquam
+                                        officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum
+                                        laborum atque vero ea perferendis consectetur veritatis.</p>
+                                    <button type="submit" class="descargar"><i
+                                            class="fas fa-download"></i></i>Información completa</button>
+                                </div>
+
+                                <div>
+                                    <!-- <i class="fa fa-bar-chart"></i> -->
+                                    <h2>Mis resultados</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique
+                                        quisquam
+                                        officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum
+                                        laborum atque vero ea perferendis consectetur veritatis.</p>
+                                    <button type="submit" class="descargar"><i
+                                            class="fas fa-download"></i></i>Información completa</button>
+                                </div>
+
+                                <div>
+                                    <!-- <i class="fa fa-envelope"></i> -->
+                                    <h2>Observaciones</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique
+                                        quisquam
+                                        officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum
+                                        laborum atque vero ea perferendis consectetur veritatis.</p>
+                                    <button type="submit" class="descargar"><i
+                                            class="fas fa-download"></i></i>Información completa</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- fin contenido -->
+
+    <!-- Inicio Script -->
+    <script type="text/javascript">
+        function _class(name) {
+            return document.getElementsByClassName(name);
+        }
+
+        let tabPanes = _class("tab-header")[0].getElementsByTagName("div");
+
+        for (let i = 0; i < tabPanes.length; i++) {
+            tabPanes[i].addEventListener("click", function () {
+                _class("tab-header")[0].getElementsByClassName("active")[0].classList.remove("active");
+                tabPanes[i].classList.add("active");
+
+                _class("tab-indicator")[0].style.top = `calc(55px + ${i * 50}px)`;
+
+                _class("tab-content")[0].getElementsByClassName("active")[0].classList.remove("active");
+                _class("tab-content")[0].getElementsByTagName("div")[i].classList.add("active");
+
+            });
+        }
+    </script>
+    <!-- Fin Script -->
+</body>
+
+</html>

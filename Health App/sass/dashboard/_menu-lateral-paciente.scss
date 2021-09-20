@@ -1,0 +1,95 @@
+@use '../abstracto' as *;
+@use '../mixin' as *;
+#barra-lateral {
+    background: #f9f9f9;
+    width: 200px;
+    height: auto;
+    .wrapper {
+        padding-top: 15px;
+        form {
+            padding-left: 5px;
+            padding-right: 5px;
+            input {
+                margin-left: 10px;
+                background: $color-azul-oscuro;
+                padding: 5px;
+                padding-left: 10px;
+                width: 131px;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                font-family: $fuente-2;
+                @include sombra-input;
+                outline: none;
+                &::placeholder{
+                    color: white;
+                    font-family: $fuente-2;
+                }
+            }
+            #buscar {
+                background: $color-azul-oscuro;
+                color: white;
+                border: none;
+                padding: 5px;
+                border-radius: 10px;
+                cursor: pointer;
+                outline-style: none;
+                &:hover {
+                    border: none;
+                }
+            }
+        }
+        #menu-lateral-paciente {
+            margin-top: 30px;
+            //background: yellow;
+            padding: 10px;
+            .menu-categorias {
+                list-style: none;
+                &>li {
+                    align-items: center;
+                    margin-bottom: 15px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    a {
+                        transition: all 400ms;
+                        font-family: $fuente-2;
+                        font-size: 15px;
+                        display: block;
+                        text-decoration: none;
+                        background: white;
+                        color: black;
+                        padding: 10px;
+                        @include sombra-input;
+                        &:hover {
+                            background: $color-verde-claro;
+                            border-left: 5px solid $color-azul-oscuro;
+                        }
+                        .fas {
+                            margin-right: 10px;
+                        }
+                    }
+                    &:hover {
+                        .menu-elementos {
+                            display: block;
+                        }
+                    }
+                    .menu-elementos {
+                        margin-left: 13px;
+                        margin-top: 10px;
+                        display: none;
+                        list-style: none;
+                        li {
+                            a {
+                                background: $color-azul-oscuro;
+                                padding: 5px
+                                ;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,111 @@
+@use 'abstracto' as *;
+@use 'mixin' as *;
+#registro-paciente {
+    height: 100%;
+    padding-top: 80px;
+    padding-bottom: 25px;
+    background: #ffffff;
+    z-index: 1;
+    .wrapper {
+        margin-top: 30px;
+        max-width: 600px;
+        h1 {
+            text-align: center;
+            font-family: $fuente-1;
+            color: $color-secundario;
+        }
+        hr {
+            margin: auto;
+            margin-top: 10px;
+            width: 540px;
+            border-top: 1px dashed $color-primario;
+        }
+        .tab-form {
+            width: auto;
+            display: flex;
+            justify-content: center ;
+            //background: yellow;
+            margin-top: 15px;
+            a {
+                margin: 0 10px;
+                padding: 10px 25px;
+                background: $color-terciario;
+                text-decoration: none;
+                color: $color-secundario;
+                border-radius: $borde-radio-min;
+                font-family: $fuente-1;
+                font-weight: 800;
+                &:first-child {
+                    border-bottom: 3px solid black;
+                }
+                &:hover {
+                    background: $color-secundario;
+                    color: white;
+                }
+            }
+        }
+        form {
+            width: 100%;
+            background: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+            justify-content: space-between;
+            padding: 20px;
+            div {
+                label {
+                    display: block;
+                    @include parrafo;
+                    margin-bottom: 10px;
+                }
+                input {
+                    @include campo-claro;
+                }
+                div {
+                    input[type="checkbox"]{
+                    width: auto;
+                    display: inline-block;
+                    }
+                    label {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+////
+#registro-medico {
+    height: 100%;
+    padding-top: 80px;
+    padding-bottom: 25px;
+    background: #ffffff;
+    z-index: 1;
+    .wrapper {
+        max-width: 600px;
+        form {
+            width: 100%;
+            background: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 20px;
+            grid-row-gap: 10px;
+            justify-content: space-between;
+            padding: 20px;
+            div {
+                label {
+                    display: inline-block;
+                    @include parrafo;
+                    margin-bottom: 10px;
+                }
+                input {
+                    @include campo-claro;
+                }
+                input[type="radio"] {
+                    width: auto;
+                }
+            }
+        }
+    }
+}

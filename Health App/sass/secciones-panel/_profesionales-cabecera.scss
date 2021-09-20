@@ -1,0 +1,134 @@
+@use '../abstracto' as *;
+@use '../elementos' as *;
+@use '../mixin' as *;
+#contenido-profesionales-cabecera {
+  background: $color-terciario;
+  width: 100%;
+  .wrapper {
+    div {
+      div {
+        h1 {
+          @include titulo-interfaz;
+        }
+      }
+      .datos-profesionales {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-gap: 20px;
+        .caja-box {
+          margin-top: 20px;
+          margin-bottom: 20px;
+          @include caja-box;
+          //ESPECIALIDADES
+          .especialidades {
+            background-color: $color-primario;
+            .acordion-especialidades {
+              .nombre-especialidad{
+                font-weight: 800;
+                border: 1px solid white;
+                cursor: pointer;
+                border-bottom: 1px;
+                //width: 100%;
+                padding: 20px;
+                font-family: $fuente-2;
+                display: block;
+                &:hover {
+                  width: 100%;
+                  background: rgb(230, 230, 230);
+                }
+                &:hover > .style-tabla {
+                  display: block;
+                  width: 100%;
+                  // margin: 0;
+                }
+              }
+            }
+          }
+
+          //PERFIL
+          .perfil-medic {
+            //background: red;
+            margin: 30px;
+            .foto-medic {
+              margin: auto;
+              overflow: hidden;
+              height: 120px;
+              width: 120px;
+              margin-bottom: 15px;
+              img {
+                height: 120px;
+                border-radius: $borde-radio-min;
+              }
+            }
+            span {
+              font-family: $fuente-1;
+              font-weight: 800;
+              display: block;
+              text-align: center;
+            }
+            hr {
+              margin-top: 10px;
+              margin-bottom: 10px;
+            }
+            p {
+              @include parrafo;
+            }
+          }
+          .biografia-medic {
+            margin: 30px;
+            h4 {
+              border-radius: $borde-radio-min;
+              width: 100%;
+              background: $color-primario;
+              color: white;
+              padding: 5px;
+              padding-left: 10px;
+              font-family: $fuente-1;
+              font-weight: 800;
+              display: block;
+              text-align: left;
+              margin-bottom: 5px;
+            }
+            p {
+              @include parrafo;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.style-tabla {
+  display: none;
+  border-collapse: collapse;
+  margin: 0;
+  margin-top: 25px;
+  font-size: 0.9em;
+  width: 100%;
+  //box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  thead tr {
+    background-color: $color-primario;
+    color: #ffffff;
+    text-align: left;
+  }
+  tbody tr {
+    border-bottom: 1px solid #dddddd;
+    &:nth-of-type(even) {
+      background-color: #f3f3f3;
+    }
+    &:last-of-type {
+      border-bottom: 2px solid #009879;
+    }
+    &:hover.active-row {
+      font-weight: bold;
+      color: #009879;
+      cursor: pointer;
+    }
+  }
+  th, td {
+    padding: 12px 15px;
+    font-family: $fuente-1;
+  }
+}

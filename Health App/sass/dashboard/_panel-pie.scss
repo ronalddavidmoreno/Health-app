@@ -1,0 +1,14 @@
+@use '../abstracto' as *;
+#pie-panel {
+    background: $color-secundario;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    span{
+        font-family: $fuente-2;
+        display: block;
+        color: white;
+        padding:10px;
+        text-align: center;
+    }
+}

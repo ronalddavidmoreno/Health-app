@@ -1,0 +1,73 @@
+@use '../abstracto' as *;
+#panel-cabecera {
+    width: 100%;
+    height: 80px;
+    background: #f9f9f9;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    box-shadow: 0 0 30px rgb(0 0 0 / 13%);
+    .cabecera-logo {
+        a {
+            img {
+                display: block;
+                width: 70px;
+                height: 70px;
+                margin: auto;
+            }
+        }
+    }
+    .cabecera-panel {
+        background: $color-secundario;
+        display: grid;
+        grid-template-columns: 70% 20%;
+        align-content: center;
+        color: white;
+    }
+    .migas {
+        //background: chartreuse;
+        display: flex;
+        align-items: center;
+        ul {
+            //background: chocolate;
+            max-width: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            margin-left: 30px;
+            li {
+                &+li:before{
+                    content: "/\00a0";
+                    color: white;
+                    font-size: 23px
+                }
+                a {
+                    font-family: $fuente-1;
+                    font-size: 23px;
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+    .box-user {
+        display: grid;
+        grid-template-columns: 70% 20%;
+        align-items: center;
+        //background: cornflowerblue;
+        div {
+            h3 {
+                font-family: $fuente-2;
+                font-size: 15px;
+            }
+            span {
+                font-family: $fuente-2;
+                font-size: 14px;
+            }
+        }
+        img {
+            display: block;
+            border-radius: 3px;
+            border: 1px solid white;
+        }
+    }
+}
