@@ -1,0 +1,96 @@
+@use 'abstracto' as *;
+@use 'elementos' as *;
+
+@mixin titulo-interfaz {
+  display: block;
+  background-color: white;
+  font-family: $fuente-titulos;
+  padding: 10px;
+  width: auto;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@mixin caja-box {
+  width: 100%;
+  background: #eaf5ff;
+  border-radius: 5px;
+  overflow: hidden;
+  &_titulo {
+    font-family: $fuente-2;
+    padding: 10px 15px;
+    display: block;
+    width: 100%;
+    background: $color-azul-oscuro;
+    color: white;
+  }
+}
+@mixin form-panel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px 15px;
+  p {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    margin-bottom: 15px;
+    label {
+      font-family: $fuente-2;
+    }
+    input {
+      font-family: $fuente-1;
+    }
+    input[type="submit"] {
+      @include boton-oscuro;
+    }
+    input {
+      &[type="text"],
+      &[type="number"],
+      &[type="date"],
+      &[type="tel"] {
+        @include campo-claro;
+        max-width: 250px;
+        margin-left: 10px;
+      }
+    }
+    select {
+      @include campo-claro;
+      max-width: 250px;
+      margin-left: 10px;
+    }
+  }
+}
+
+@mixin parrafo {
+  font-family: $fuente-parrafo;
+  font-size: 15px;
+  font-weight: 600;
+}
+@mixin titulo-h1 {
+  font-family: "Montserrat";
+}
+@mixin titulo-h2 {
+  font-family: "Montserrat";
+}
+@mixin titulo-h3 {
+  font-family: "Montserrat";
+}
+
+//inputs
+@mixin campo-claro {
+  width: 100%;
+  background: $color-primario;
+  border: none;
+  outline: none;
+  border-radius: $borde-radio-min;
+  padding: 5px;
+  color: $color-secundario;
+  font-family: $fuente-2;
+  font-weight: 700;
+}
+@mixin sombra-input {
+  box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.16),
+    0px 0px 11px 0px rgba(0, 0, 0, 0.1), 0px 0px 11px 0px rgba(0, 0, 0, 0.1),
+    inset 0px 0px 3px 1px rgba(0, 0, 0, 0.1),
+    inset 0px 0px 3px 1px rgba(0, 0, 0, 0.1),
+    inset 0px 0px 3px 1px rgba(0, 0, 0, 0.1);
+}

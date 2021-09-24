@@ -1,0 +1,124 @@
+@use 'mixin' as *;
+@use 'abstracto' as *;
+@use 'elementos' as *;
+#portada {
+    height: 450px;
+    padding-top: 80px;
+    padding-bottom: 25px;
+    background: #ffffff;
+    z-index: 1;
+    .wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 370px;
+        align-content: center;
+        .portada-left {
+            display: grid;
+            align-content: center;
+            width: 50%;
+            h1 {
+                @include titulo-h1;
+            }
+            h2 {
+                @include titulo-h2;
+            }
+            p {
+                @include parrafo;
+            }
+        }
+        .portada-rigth {
+            width: 50%;
+        }
+    }
+}
+#calltoaction {
+    background: $color-primario;
+    height: 90px;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+        .calltoaction-descripcion {
+            .pregunta{
+                @include titulo-h3;
+                color: $color-secundario;
+                font-size: 15px;
+            }
+            p {
+                color: white;
+                @include parrafo;
+            }
+        }
+        #calltoaction-info {
+            @include boton-oscuro;
+            text-transform: uppercase;
+        }
+    }
+}
+#testimonios {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .descripcion {
+            max-width: 400px;
+            h4 {
+                @include titulo-h3;
+            }
+            p {
+                @include parrafo;
+            }
+        }
+        .galeria {
+            .imagenes {
+                width: 340px;
+                height: 180px;
+                //background: chartreuse;
+                img {
+                    height: 180px;
+                }
+            }
+        }
+    }
+}
+#datos {
+    background: $color-secundario;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .datos-1 {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            width: 50%;
+            img {
+                float: left;
+                width: 150px;
+                height: 150px;
+                margin-right: 50px;
+            }
+            p {
+                @include parrafo;
+                color: white;
+            }
+        }
+        .datos-2 {
+            padding-top: 40px;
+            padding-bottom: 40px;
+            width: 50%;
+            img {
+                float: left;
+                width: 150px;
+                height: 150px;
+                margin-right: 50px;
+            }
+            p {
+                @include parrafo;
+                color: white;
+            }
+        }
+    }
+}

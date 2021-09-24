@@ -1,0 +1,27 @@
+@use '../abstracto' as *;
+@mixin boton-claro {
+    font-family: 'Montserrat';
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 18px;
+    background: $color-primario;
+    color: white;
+    font-weight: 700;
+    border: 0px;
+    transition: all 500ms;
+    &:hover {
+        background: $color-secundario;
+    }
+}
+@mixin boton-oscuro {
+    @include boton-claro;
+    background: $color-secundario;
+    color: white;
+    border: 1px solid $color-secundario;
+    &:hover {
+        background: white;
+        color: $color-secundario;
+        border: 1px solid $color-secundario;
+    }
+}

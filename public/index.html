@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type='text/css' href="css/main.css">
+    <link rel="icon" href="img/logo.jfif">
+    <script src="https://kit.fontawesome.com/35395e1fb2.js" crossorigin="anonymous"></script>
+    <title>Health App</title>
+</head>
+
+<body>
+    <!-- cabecera -->
+    <header id='cabecera'>
+        <div class="cabecera-box">
+            <div class="wrapper">
+                <div class="logotipo">
+                    <img src="img/logo.jfif" alt="LOGO">
+                    <span><a href="index.html">HEALTH <br>APP</a></span>
+                </div>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="interfaces/nosotros.html">Nosotros</a></li>
+                        <li><a href="interfaces/nosotros.html#servicios">Servicio</a></li>
+                        <li><a href="interfaces/membresias.html">Membresias</a></li>
+                    </ul>
+                </nav>
+                <button id="btn-login" onmouseover="login()">Iniciar Sesion</button>
+                <div class="login">
+                    <form action="interfaces/dashboard/paciente/perfil-paciente.html">
+                        <span>Iniciar Sesión</span>
+                        <hr>
+                        <p>
+                            <label for="usuario">Email o usuario:</label>
+                            <input type="text" id="usuario" name="usuario">
+                        </p>
+                        <p>
+                            <label for="contraseña">Contraseña:</label>
+                            <input type="password" id="contraseña" name="contraseña">
+                        </p>
+                        <p>
+                            <label for="documento">Documento:</label>
+                            <input type="number" id="documento" name="dni">
+                        </p>
+                        <p class="permanent">
+                            <input type="checkbox" name="" id="conect-permanent">
+                            <label for="conect-permanent">Permanecer conectado</label>
+                        </p>
+                        <input type="submit" onclick="enviarForm()" id='enviar' value="ENTRAR">
+                        <p class="recuperar-contraseña"><a href="#">¿No recuerdas tu contraseña?</a></p>
+                        <div class="link-regis">
+                            <span>ó</span>
+                            <a href="/interfaces/registro-paciente.html">Registrate</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- fin cabecera -->
+    <!-- portada -->
+    <div id="portada">
+        <div class="wrapper">
+            <div class="portada-left">
+                <h1>Sabias que... </h1> <br>
+                <p> ¿Sabían que nuestra esperanza de vida se ha reducido en 4.7 años con tan solo respirar?. Este dato
+                    es de tan solo "Lima", nos referimos a todo tipo de contaminación por la que el planeta esta pasando.(AQLIAIR QUALITY LIFE INDEX 2021) <br></p>
+            </div>
+            <div class="portada-right">
+                <div>
+                    <img src="img/lima.jpg" alt="Medico" width="350px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--fin portada -->
+    <!-- llamada al accion -->
+    <div id="calltoaction">
+        <div class="wrapper">
+            <div class="calltoaction-descripcion">
+                <p class="pregunta">"La salud es la mayor posesión. La alegría es el mayor tesoro. La confianza es el mayor amigo"</p>
+                <p>
+                    (Lao Tzu)
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- fin llamada al accion -->
+    <!-- testimonios -->
+    <div id="testimonios">
+        <div class="wrapper">
+            <div class="descripcion">
+                <h2>Sobre la App</h2> <br>
+                <p>La App consiste y se basa en darte una mejor experiencia en el día a día ya que te mostrará en tiempo
+                    real si la ubicación donde te encuentras presenta un estado de la calidad de aire: umbral de
+                    cuidado(SENAMI 2015), mala, moderada y buena.
+                </p>
+            </div>
+            <div class="galeria">
+                <div class="imagenes">
+                    <img src="img/planeta.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin testimonios -->
+    <!-- datos -->
+    <div id="datos">
+        <div class="wrapper">
+            <div class="datos-1">
+                <img src="https://miro.medium.com/max/4096/1*dSS_f8IkhE1pIcM-CSbWRw.jpeg" alt="imagen" width="20px" height="20px">
+                <p>En el contexto de la pandemia que estamos pasando, la calidad del aire a cambiado considerablemente, para bien. <br>
+                    Pero poco a poco con el regreso de las personas y sus actividades cotidianas antes de la pendemia, volveremos a sufrir el mismo caos del que habiamos salido. 
+                </p>
+            </div>
+            <div class="datos-2">
+                <img src="http://aws-noticias-es.s3.amazonaws.com/2015/05/vida-saludable.jpg" alt="imagen" width="30px" >
+                <p>¿Quieres cambiar a una vida sana o mantener una vida sana? Que mejor con la ayuda de una App que se
+                    adapte a tus necesidades. #VidaSana. <br>No olvidemos que para tener una vida plena, dependemos de
+                    la
+                    salud del planeta. </p>
+            </div>
+        </div>
+    </div>
+    <!-- fin datos -->
+
+    <!-- pie de pagina -->
+    <footer id="pie-pagina">
+        <div class="wrapper">
+            <div class="pie-c1">
+                <h2>Health App</h2>
+                <p>
+                    Somos una empresa dedicada al cuidado y bienestar de nuestros clientes, brindandoles recomendaciones sobre,
+                    habitos alimenticios, ejercicio y deportes y en general una vida plena y saludable.
+                </p>
+            </div>
+            <div class="pie-c2">
+                <h2>Enlaces de Interes</h2>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Asociados</a></li>
+                    <li><a href="#">Relacionado</a></li>
+                    <li><a href="#">Libro de ayuda</a></li>
+                </ul>
+            </div>
+            <div class="pie-c3">
+                <h2>Siguenos</h2>
+                <a href="https:/www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https:/www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https:/www.youtube.com"><i class="fab fa-youtube"></i></a>
+                <a href="https:/www.instagram.com"><i class="fab fa-instagram"></i></a>
+                <h2>Contactanos</h2>
+                <p>Av San Agustin 145 San Isidro-Lima</p>
+                <p>(01)962985916</p>
+                <p>healthapp@gmail.com</p>
+            </div>
+        </div>
+        <div class="firma">
+            <hr>
+            <span>Todos los derechos reservados &copy; Health App</span>
+        </div>
+    </footer>
+    <!-- fin pie de pagina -->
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

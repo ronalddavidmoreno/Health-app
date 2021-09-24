@@ -1,0 +1,46 @@
+@use '../abstracto' as *;
+@use '../elementos' as *;
+@use '../mixin' as *;
+
+#contenido-planes-membresias {
+  background: $color-terciario;
+  width: 100%;
+  .wrapper {
+    div {
+      .titulo-membresia {
+          @include titulo-interfaz;
+          text-align: center;
+        h1 {
+            font-family: $fuente-titulos;
+            margin-bottom: 10px;
+        }
+        p{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            @include parrafo;
+        }
+      }
+      #membresias {
+        padding-top: 0px;
+        .wrapper{
+            margin-top: 0;
+            padding: 0;
+        }
+      }
+      .caja-box {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        @include caja-box;
+        .form-servicio-personalizado {
+          @include form-panel;
+          label {
+            width: 173px;
+          }
+          .upload-file {
+            grid-template-columns: 1fr;
+          }
+        }
+      }
+    }
+  }
+}
