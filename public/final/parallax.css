@@ -1,0 +1,367 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+section {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.parallax {
+    background: white fixed no-repeat 50% 50% ;
+    background-size: cover;
+
+}
+#seccion1 {
+    background-image: url(img/nature-forest-trees-path.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin: 0px; 
+    padding: 0px
+}
+#seccion2 {
+    background-image: url(img/cardio.jpeg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin: 0px; 
+    padding: 0px
+}
+
+
+#section {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    color: rgb(54, 196, 73);
+    padding: 0;
+    font-size: 2em;
+}
+.parallax {
+    background: white fixed no-repeat 50% 50% ;
+    background-size: cover;
+
+}
+#cabecera {
+    position: fixed;
+    background: white;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.13);
+    z-index: 999;
+  }
+  #cabecera .cabecera-box {
+    max-width: 1100px;
+    height: 100%;
+    margin: auto;
+  }
+  #cabecera .cabecera-box .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+  #cabecera .cabecera-box .wrapper .logotipo {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    width: 15%;
+    height: 100%;
+  }
+  #cabecera .cabecera-box .wrapper .logotipo img {
+    display: inline-block;
+    margin: 10px auto;
+    width: 60px;
+    height: 60px;
+  }
+  #cabecera .cabecera-box .wrapper .logotipo span {
+    display: inline-block;
+    font-size: 25px;
+    color: #253750;
+  }
+  #cabecera .cabecera-box .wrapper .logotipo span a {
+    text-decoration: none;
+    color: #253750;
+  }
+  #cabecera .cabecera-box .wrapper #menu {
+    width: 400px;
+  }
+  #cabecera .cabecera-box .wrapper #menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #cabecera .cabecera-box .wrapper #menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #253750;
+    font-family: "Montserrat";
+    font-weight: 700;
+    padding: 8px 10px;
+  }
+  #cabecera .cabecera-box .wrapper #menu ul li a:hover {
+    border-top: 2px solid #4ac4a9;
+    border-bottom: 2px solid #4ac4a9;
+  }
+  #cabecera .cabecera-box .wrapper #btn-login {
+    font-family: "Montserrat";
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 18px;
+    background: #4ac4a9;
+    color: white;
+    font-weight: 700;
+    border: 0px;
+    transition: all 500ms;
+    text-transform: uppercase;
+  }
+  #cabecera .cabecera-box .wrapper #btn-login:hover {
+    background: #253750;
+  }
+  #cabecera .cabecera-box .wrapper .login {
+    display: none;
+    width: 200px;
+    min-height: 190px;
+    position: fixed;
+    background: white;
+    top: 60px;
+    right: 150px;
+    border-radius: 5px;
+    border: 1px solid #4ac4a9;
+  }
+  #cabecera .cabecera-box .wrapper .login form {
+    padding: 20px;
+    display: block;
+  }
+  #cabecera .cabecera-box .wrapper .login form span {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Montserrat";
+    font-weight: 800;
+  }
+  #cabecera .cabecera-box .wrapper .login form p {
+    margin-top: 6px;
+    margin-bottom: 5px;
+  }
+  #cabecera .cabecera-box .wrapper .login form p label {
+    font-family: "OpenSans";
+    font-size: 15px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  #cabecera .cabecera-box .wrapper .login form p input {
+    width: 100%;
+    background: #4ac4a9;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: #253750;
+    font-family: "OpenSans";
+    font-weight: 700;
+  }
+  #cabecera .cabecera-box .wrapper .login form .permanent {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  #cabecera .cabecera-box .wrapper .login form .permanent label {
+    width: auto;
+    font-size: 11px;
+  }
+  #cabecera .cabecera-box .wrapper .login form .permanent input {
+    margin-right: 5px;
+    width: auto;
+  }
+  #cabecera .cabecera-box .wrapper .login form input[type=submit] {
+    width: 100%;
+    font-family: "Montserrat";
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 18px;
+    background: #4ac4a9;
+    color: white;
+    font-weight: 700;
+    border: 0px;
+    transition: all 500ms;
+    background: #253750;
+    color: white;
+    border: 1px solid #253750;
+  }
+  #cabecera .cabecera-box .wrapper .login form input[type=submit]:hover {
+    background: #253750;
+  }
+  #cabecera .cabecera-box .wrapper .login form input[type=submit]:hover {
+    background: white;
+    color: #253750;
+    border: 1px solid #253750;
+  }
+  #cabecera .cabecera-box .wrapper .login form .recuperar-contraseña {
+    width: 100%;
+    text-align: center;
+  }
+  #cabecera .cabecera-box .wrapper .login form .recuperar-contraseña a {
+    text-decoration: none;
+    color: #253750;
+    font-family: "OpenSans";
+    font-size: 11px;
+  }
+  #cabecera .cabecera-box .wrapper .login form .link-regis {
+    position: relative;
+    width: 100%;
+  }
+  #cabecera .cabecera-box .wrapper .login form .link-regis span {
+    font-size: 11px;
+  }
+  #cabecera .cabecera-box .wrapper .login form .link-regis a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #253750;
+    font-family: "OpenSans";
+    font-size: 15px;
+    font-weight: 600;
+  }
+/*fin de estilos del menú*/
+
+.logo {
+    position: absolute;
+    top: 220px;
+    left: 40px;
+}
+.detalles{
+    position: absolute;
+    top: 330px;
+    left: 380px;
+    background-color:rgba(48, 47, 47, 0.781);
+    color: white;
+    padding: 4px;
+}
+
+.pie{
+    background: rgba(0, 0, 0, 0.445); 
+    position: absolute; 
+    top: 1209px;
+    width: 100%;
+    height: 20%;
+
+}
+.par {
+    font-size: 2.5em;
+    position: absolute;
+    left: 280px;
+    color: rgb(193, 202, 255);
+    top: 10px;
+
+}
+.mapa {
+    position:absolute;
+    top: 14px;
+    left: 1134px;
+    
+}
+.abajo1{
+    width: 90px;
+    height: 60px;
+    position: absolute;
+    top: 22px;
+    left: 20px;
+}
+.abajo2{
+    width: 80px;
+    height: 60px;
+    position: absolute;
+    left: 60px;
+    top: 22px;
+}
+
+.icono1 {
+    position: absolute;
+    top: 115%;
+    height: 10%;
+    width: 8%;
+    left: 10px;
+}
+.icono2 {
+  position: absolute;
+  top: 115%;
+  height: 10%;
+  width: 8%;
+  left: 600px;
+}
+.negro{
+  background-color: rgba(0, 0, 0, 0.774);
+  position: absolute;
+  height: 34%;
+  width: 0.4%;
+  top: 130%;
+  left: 45%;
+}
+.det1{
+  position: absolute;
+  padding: 4px;
+  font-size: 1.2em;
+  top: 140%;
+  left: 10%;
+}
+.fond{
+  background-color: rgba(255, 255, 255, 0.514);
+  width: 30%;
+  height: 30%;
+}
+.det2{
+  position: absolute;
+  font-size: 1.2em;
+  padding: 4px;
+  top: 140%;
+  left: 50%;
+  
+}
+.ubi1{
+    position: absolute;
+    top: 100px;
+}
+
+.bo1{
+  position: absolute;
+  top: 168%;
+  left: 34%;
+  border-radius: black solid 2px;
+  cursor: pointer;
+  box-shadow: 0px 1px 10px rgb(0,0,5);
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  transition: 20ms;
+  
+}
+.bo2{
+  position: absolute;
+  top: 168%;
+  left: 74%;
+  border-radius: black solid 2px;
+  cursor: pointer;
+  box-shadow: 0px 1px 10px rgb(0,0,5);
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  transition: 20ms;
+}
+
+.bo1:hover{
+  transform: scale(1.2);
+  
+  background-color: rgb(51, 50, 50);
+  color: rgb(133, 90, 90);
+}
+.bo2:hover{
+  transform: scale(1.2);
+  background-color: rgb(51, 50, 50);
+  color: rgb(133, 90, 90)
+}
