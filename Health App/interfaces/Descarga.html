@@ -4,31 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logofinal.png">
     <link rel="stylesheet" href="../css/parallax.css">
-    <title>descargar</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Descarga-HealthApp</title>
 </head>
 <body>
-    <section class="parallax" id="seccion1" >
-        <!--inicio cabecera-->
-        <header id='cabecera'>
-            <div class="cabecera-box">
-                <div class="wrapper">
-                    <div class="logotipo">
-                        <img src="../img/logofinal.png" alt="" width="60px" height="60px">
-                        <span><a href="index.html">Health <br>App</a></span>
-                    </div>
-                    <nav id="menu">
-                        <ul>
-                            <li><a href="/Health App/index.html">Inicio</a></li>
-                            <li><a href="/Health App/interfaces/nosotros.html">Nosotros</a></li>
-                            <li><a href="/Health App/contacto.html">Contacto</a></li>
-                            <li><a href="/Health App/interfaces/membresias.html">Membresias</a></li>
-                            <li><a href="descarga.html">Descargar</a></li>
-                        </ul>
-                    </nav>
+    <header id='cabecera'>
+        <div class="cabecera-box">
+            <div class="wrapper">
+                <div class="logotipo">
+                    <img src="../img/logofinal.png" alt="LOGO">
+                    <span><a href="index.html">Health <br>App</a></span>
+                </div>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="membresias.html">Membresias</a></li>
+                        <li><a href="Descarga.html">Descargar</a></li>
+                    </ul>
+                </nav>
+                <button id="btn-login" onclick="login()">Iniciar Sesion</button>
+                <div class="login">
+                    <form action="interfaces/dashboard/paciente/perfil-paciente.html">
+                        <span>Iniciar Sesión</span>
+                        <hr>
+                        <p>
+                            <label for="usuario">Email o usuario:</label>
+                            <input type="text" id="usuario" name="usuario">
+                        </p>
+                        <p>
+                            <label for="contraseña">Contraseña:</label>
+                            <input type="password" id="contraseña" name="contraseña">
+                        </p>
+                        <p>
+                            <label for="documento">Documento:</label>
+                            <input type="number" id="documento" name="dni">
+                        </p>
+                        <p class="permanent">
+                            <input type="checkbox" name="" id="conect-permanent">
+                            <label for="conect-permanent">Permanecer conectado</label>
+                        </p>
+                        <input type="submit" onclick="enviarForm()" id='enviar' value="ENTRAR">
+                        <p class="recuperar-contraseña"><a href="#">¿No recuerdas tu contraseña?</a></p>
+                        <div class="link-regis">
+                            <span>ó</span>
+                            <a href="/interfaces/registro-paciente.html">Registrate</a>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
         <div class="detalles"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat aperiam sit maiores ut et voluptate ipsa corrupti omnis sint harum <br> ullam, neque non mollitia autem! Amet odit, eveniet ipsum veritatis iure minima natus fugit nihil. Esse error, ea iure, ducimus ullam <br> harum corporis incidunt quisquam amet assumenda dicta est! Facilis.</p></div>
         <section class="logo"><img src="../final/img/aplicacion1.jpeg" alt="Logo"></section>
         <!-- fin cabecera --> 

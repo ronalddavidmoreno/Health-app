@@ -32,6 +32,9 @@ form{
   width: 30%;
   margin: auto;
 }
+form{
+  margin-top: 70px;
+}
 
 form .grupo{
   position: relative;
@@ -75,7 +78,7 @@ label{
   pointer-events: none;
 }
 
-button{
+.btn_submit{
   background: #4AC4A9;
   display: block;
   width: 100px;

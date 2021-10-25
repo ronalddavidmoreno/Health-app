@@ -4,36 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type='text/css' href="/Health App/cssrosario/main.css">
-    <link rel="stylesheet" type='text/css' href="/Health App/cssrosario/contacto.css">
-    <link rel="icon" href="img/logo.jfif">
+    <link rel="stylesheet" type='text/css' href="../cssrosario/contacto.css">
+    <link rel="stylesheet" type='text/css' href="../css/main.css">
+    <link rel="icon" href="../img/logofinal.png">
     <script src="https://kit.fontawesome.com/35395e1fb2.js" crossorigin="anonymous"></script>
     <title>Contacto</title>
 </head>
 
 <body>
-    <section class="parallax" id="seccion1" >
-        <!--inicio cabecera-->
-        <header id='cabecera'>
-            <div class="cabecera-box">
-                <div class="wrapper">
-                    <div class="logotipo">
-                        <img src="../img/logofinal.png" alt="" width="60px" height="60px">
-                        <span><a href="index.html">Health <br>App</a></span>
-                    </div>
-                    <nav id="menu">
-                        <ul>
-                            <li><a href="/Health App/index.html">Inicio</a></li>
-                            <li><a href="interfaces/nosotros.html">Nosotros</a></li>
-                            <li><a href="/Health App/contacto.html">Contacto</a></li>
-                            <li><a href="membresias.html">Membresias</a></li>
-                            <li><a href="/Health App/final/Descarga.html">Descargar</a></li>
-                        </ul>
-                    </nav>
+    <header id='cabecera'>
+        <div class="cabecera-box">
+            <div class="wrapper">
+                <div class="logotipo">
+                    <img src="../img/logofinal.png" alt="LOGO">
+                    <span><a href="index.html">Health <br>App</a></span>
+                </div>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="membresias.html">Membresias</a></li>
+                        <li><a href="Descarga.html">Descargar</a></li>
+                    </ul>
+                </nav>
+                <button id="btn-login" onclick="login()">Iniciar Sesion</button>
+                <div class="login">
+                    <form action="interfaces/dashboard/paciente/perfil-paciente.html">
+                        <span>Iniciar Sesión</span>
+                        <hr>
+                        <p>
+                            <label for="usuario">Email o usuario:</label>
+                            <input type="text" id="usuario" name="usuario">
+                        </p>
+                        <p>
+                            <label for="contraseña">Contraseña:</label>
+                            <input type="password" id="contraseña" name="contraseña">
+                        </p>
+                        <p>
+                            <label for="documento">Documento:</label>
+                            <input type="number" id="documento" name="dni">
+                        </p>
+                        <p class="permanent">
+                            <input type="checkbox" name="" id="conect-permanent">
+                            <label for="conect-permanent">Permanecer conectado</label>
+                        </p>
+                        <input type="submit" onclick="enviarForm()" id='enviar' value="ENTRAR">
+                        <p class="recuperar-contraseña"><a href="#">¿No recuerdas tu contraseña?</a></p>
+                        <div class="link-regis">
+                            <span>ó</span>
+                            <a href="/interfaces/registro-paciente.html">Registrate</a>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </header>
-        <div class="detalles"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat aperiam sit maiores ut et voluptate ipsa corrupti omnis sint harum <br> ullam, neque non mollitia autem! Amet odit, eveniet ipsum veritatis iure minima natus fugit nihil. Esse error, ea iure, ducimus ullam <br> harum corporis incidunt quisquam amet assumenda dicta est! Facilis.</p></div>
+        </div>
+    </header>
+        <div class="detalles"></div>
         <section class="logo"><img src="img/aplicacion1.jpeg" alt="Logo"></section>
         <!-- fin cabecera --> 
         
@@ -57,7 +84,7 @@
                 <textarea name="" id="" rows="3" required></textarea><span class="barra"></span>
                 <label>Mensaje</label>
             </div>
-            <button type="submit">Enviar</button>
+            <button type="submit" class="btn_submit">Enviar</button>
         </div>
     </form>
 
