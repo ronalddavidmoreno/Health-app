@@ -1072,7 +1072,7 @@
 #datos .wrapper .datos-2 {
   padding-top: 40px;
   padding-bottom: 40px;
-  width: 50%;
+  width: 40%;
 }
 #datos .wrapper .datos-2 img {
   float: left;
@@ -1443,6 +1443,9 @@
 }
 #registro-medico .wrapper form div input[type=radio] {
   width: auto;
+}
+.modif{
+  box-shadow: 7px 5px 5px gray;
 }
 
 /*# sourceMappingURL=main.css.map */
